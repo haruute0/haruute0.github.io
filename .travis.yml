@@ -1,0 +1,17 @@
+sudo: false
+language: node_js
+
+before_install:
+  - mkdir out
+
+script:
+  - npm run-script build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN
+  local_dir: out
+  target-branch: master
+  on:
+    branch: source

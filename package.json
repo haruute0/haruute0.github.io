@@ -1,0 +1,16 @@
+{
+  "name": "haruute0.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node src/js/generate.js"
+  },
+  "author": "Vriyas Hartama A",
+  "license": "ISC",
+  "dependencies": {
+    "mustache": "^2.3.0",
+    "ncp": "^2.0.0"
+  }
+}
