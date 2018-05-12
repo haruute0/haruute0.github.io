@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Vriyas Hartama Adesaputra</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/main.css">
 </head>
 <body>
     <h1>Vriyas Hartama Adesaputra</h1>
         <p>Hey there, I'm a I'm 17 years old high school student in <a href="https://debritto.sch.id">John de Britto College</a>.</p>
-
-        <h3><a href="https://haruute0.github.io/stories">Checkout my medium post here!</a></h3>
+        {{#posts}}
+            <h3>{{title}}</h3>
+            <i>Show recent post from medium</i>
+                {{#items}}
+                <ul>
+                    <li><a href={{link}} target="_blank">{{title}}</a></li>
+                </ul>
+                {{/items}}
+        {{/posts}}
 </body>
 <footer>
     <i>Still WIP right now :D
