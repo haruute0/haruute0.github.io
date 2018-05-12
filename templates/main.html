@@ -4,22 +4,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- COMMON TAGS -->
     <meta charset="utf-8">
-    <title>Vriyas Hartama Adesaputra</title>
+    {{#siteInfo}}
+    <title>{{title}}</title>
     <!-- Search Engine -->
-    <meta name="description" content="Vriyas Hartama's Website">
+    <meta name="description" content="{{description}}">
     <!-- Schema.org for Google -->
-    <meta itemprop="name" content="Vriyas Hartama Adesaputra">
-    <meta itemprop="description" content="Vriyas Hartama's Website">
+    <meta itemprop="name" content="{{title}}">
+    <meta itemprop="description" content="{{description}}">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Vriyas Hartama Adesaputra">
-    <meta name="twitter:description" content="Vriyas Hartama's Website">
-    <meta name="twitter:creator" content="@vriyas29">
+    <meta name="twitter:title" content="{{title}}">
+    <meta name="twitter:description" content="{{description}}">
+    <meta name="twitter:creator" content="{{twitter_username}}">
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta name="og:title" content="Vriyas Hartama Adesaputra">
-    <meta name="og:description" content="Vriyas Hartama's Website">
-    <meta name="og:url" content="https://haruute0.github.io">
-    <meta name="og:site_name" content="Vriyas Hartama Adesaputra">
+    <meta name="og:title" content="{{title}}">
+    <meta name="og:description" content="{{description}}">
+    <meta name="og:url" content="{{baseURL}}">
+    <meta name="og:site_name" content="{{title}}">
     <meta name="og:type" content="website">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119108098-1"></script>
@@ -34,7 +35,8 @@
     <link rel="stylesheet" href="static/css/main.css">
 </head>
 <body>
-    <h1>Vriyas Hartama Adesaputra</h1>
+    <h1>{{title}}</h1>
+    {{/siteInfo}}
         <p>Hey there, I'm 17 years old high school student in <a href="https://debritto.sch.id">John de Britto College</a>.</p>
         {{#posts}}
             <h3>{{title}}</h3>
@@ -45,9 +47,17 @@
                 </ul>
                 {{/items}}
         {{/posts}}
+        {{#contact}}
+        <h3>Contact me</h3>
+        <ul>
+            <li><a href="{{item}}">{{link}}</a></li>
+        </ul>
+        {{/contact}}
 </body>
 <footer>
     <i>Still WIP right now :D
-        <p>&copy; 2018 Vriyas Hartama Adesaputra</p></i>
+        {{#siteInfo}}
+        <p>&copy; 2018 {{author}} - <a href="https://github.com/{{github}}">{{github}}</a></p></i>
+        {{/siteInfo}}
 </footer>
 </html>
