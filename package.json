@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir -p out && node lib/staticmover.js && node lib/scrape.js && node lib/generate.js"
+    "build": "mkdir -p out && node lib/staticmover.js && node lib/generate.js"
   },
   "author": "Vriyas Hartama A <vriyashartama@gmail.com>",
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "mustache": "^2.3.0",
     "ncp": "^2.0.0",
-    "rss-to-json": "^1.0.4"
+    "nunjucks": "^3.1.2"
   }
 }
