@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <!--CSS&JS-->
+        <link type="text/css" rel="stylesheet" href="static/css/main.css"/>
+        <script src="static/js/materialize.min.js"></script>
+        <!--END-->
+    </head>
+    <body>
+    {% block body %}{% endblock %}
+    </body>
+    <footer>
+    {% include "./_footer.nj" %}
+    </footer>
+</html>
