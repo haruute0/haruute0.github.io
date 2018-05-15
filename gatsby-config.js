@@ -1,12 +1,27 @@
 module.exports = {
   siteMetadata: {
-    title: 'Vriyas Hartama A',
+    title: 'Vriyas Hartama Adesaputra',
   },
-  plugins: ['gatsby-plugin-react-helmet',
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-catch-links',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/blog`,
+        name: 'blog'
+      }
+    },
     {
       resolve: `gatsby-source-medium`,
       options: {
         username: '@haruute'
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: []
       }
     },
     {
