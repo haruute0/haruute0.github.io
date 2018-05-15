@@ -1,16 +1,23 @@
 {
-  "name": "haruute0.github.io",
-  "version": "1.0.0",
+  "name": "Website",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "mkdir -p out && node lib/staticmover.js && node lib/scrape.js && node lib/generate.js"
-  },
-  "author": "Vriyas Hartama A",
-  "license": "ISC",
+  "version": "1.0.0",
+  "author": "Vriyas Hartama A <vriyashartama@gmail.com>",
   "dependencies": {
-    "mustache": "^2.3.0",
-    "ncp": "^2.0.0",
-    "rss-to-json": "^1.0.4"
-  }
+    "gatsby": "^1.9.247",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-google-analytics": "^1.0.31",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-source-medium": "^1.0.14",
+    "react-helmet": "^5.2.0"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'"
+  },
+  "devDependencies": {
+    "prettier": "^1.12.0"
+  },
+  "private": true
 }
