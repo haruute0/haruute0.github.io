@@ -1,7 +1,4 @@
 {
-  "name": "Website",
-  "description": "",
-  "version": "1.0.0",
   "author": "Vriyas Hartama A <vriyashartama@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.247",
