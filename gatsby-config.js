@@ -15,7 +15,15 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: []
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 500
+            }
+          },
+          `gatsby-remark-copy-images`
+        ]
       }
     },
     {

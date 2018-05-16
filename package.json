@@ -6,6 +6,8 @@
     "gatsby-plugin-catch-links": "^1.0.22",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-remark-copy-images": "^0.2.1",
+    "gatsby-remark-images": "^1.5.63",
     "gatsby-source-filesystem": "^1.5.35",
     "gatsby-transformer-remark": "^1.7.41",
     "react-helmet": "^5.2.0"
