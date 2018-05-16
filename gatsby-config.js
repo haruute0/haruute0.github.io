@@ -13,12 +13,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-medium`,
-      options: {
-        username: '@haruute'
-      }
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: []
