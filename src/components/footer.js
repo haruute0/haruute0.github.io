@@ -1,12 +1,12 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react";
+import Link from "gatsby-link";
 
 const Footer = () => (
-  <div>
-      <footer>
-          Footer
-      </footer>
+  <div className="footer">
+    <div className="warp">
+      <p>Footer Here</p>
+    </div>
   </div>
-)
+);
 
-export default Footer
+export default Footer;

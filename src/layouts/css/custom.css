@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.blog-post {
+    line-height: 1.5em
+}
+
+.blog-post-title {
+    line-height: 1.5em
+}
+
+body {
+    font-family: 'Open Sans', sans-serif
+}

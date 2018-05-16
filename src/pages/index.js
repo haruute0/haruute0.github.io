@@ -1,11 +1,11 @@
-import React from 'react'
-import Link from "gatsby-link"
+import React from "react";
+import Link from "gatsby-link";
 
 const IndexPage = () => (
   <div>
-    <p>Hello World!</p>
-    <Link to="/blog/">Blog</Link>
+    <h1>Hello there</h1>
+    <p>I'm Vriyas Hartama</p>
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

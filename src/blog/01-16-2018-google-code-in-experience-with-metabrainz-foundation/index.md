@@ -38,7 +38,8 @@ P.S Now MBS-9561 applied to MusicBrainz website and this is the changelog.
 
 Back again, this is most fun task so there only one answer, but allowing me to mention other superb I’ve done. I’m done doing “Create a vector drawing that visually explains differences between Release Group from Release, Track from Recording, and Recording from Work” which is also fun to do.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Do you always get confused with tracks and recordings and works and releases and release groups? You&#39;re definitely not alone! Our Google Code-in student @haruute (Hartama) made these so that you can remember what is what :) - reo <a href="https://t.co/XLNTjLgVFV">pic.twitter.com/XLNTjLgVFV</a></p>&mdash; MusicBrainz (@MusicBrainz) <a href="https://twitter.com/MusicBrainz/status/951038058375340032">January 10, 2018</a></blockquote>
+> Do you always get confused with tracks and recordings and works and releases and release groups? You're definitely not alone! Our Google Code-in student @haruute (Hartama) made these so that you can remember what is what :) - reo [pic.twitter.com/XLNTjLgVFV](https://t.co/XLNTjLgVFV)
+> — [January 10, 2018](https://twitter.com/MusicBrainz/status/951038058375340032)
 
 And why I’m proud to do this, because now it is posted on MusicBrainz twitter account.
 
