@@ -7,7 +7,24 @@ const blogpost = ({ data }) => {
 
   return (
     <div className="blog-post-container">
-      <Helmet title={`${post.frontmatter.title} - ${site.title}`} />
+      <Helmet title={`${post.frontmatter.title} - ${site.title}`}>
+        <meta charset="utf-8" />
+        <meta name="description" content={site.description} />
+        <meta
+          property="og:url"
+          content={`${site.siteUrl}${post.frontmatter.path}`}
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={post.frontmatter.title} />
+        <meta
+          property="article:author"
+          content="https://www.facebook.com/vriyas29"
+        />
+        <meta
+          property="article:published_time"
+          content={post.frontmatter.date}
+        />
+      </Helmet>
       <div className="blog-post">
         <h1 className="blog-post-title">{post.frontmatter.title}</h1>
         <div className="blog-post-date">
@@ -29,6 +46,8 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
+        siteUrl
       }
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
