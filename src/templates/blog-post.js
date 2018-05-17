@@ -29,7 +29,9 @@ const blogpost = ({ data }) => {
       <Container text>
         <Header as="h1">{post.frontmatter.title}</Header>
         <p>
-          Posted on <b>{post.frontmatter.date}</b>
+          Posted on <b><time dateTime={post.frontmatter.date}>
+          {post.frontmatter.date}
+          </time></b>
         </p>
         <div
           className="blog-post-content"
@@ -52,7 +54,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date
         path
         title
       }
