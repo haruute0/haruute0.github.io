@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+html {
+    width: 100vw;
+}
+
 .blog-post {
     line-height: 1.5em
 }
@@ -8,6 +12,19 @@
     line-height: 1.5em
 }
 
+.calendar {
+    height: 1em;
+    margin-right: 10px;
+}
+
+.home-icon {
+    height: 2em
+}
+
 body {
     font-family: 'Open Sans', sans-serif
+}
+
+.headermenu {
+    margin-bottom: 1em
 }

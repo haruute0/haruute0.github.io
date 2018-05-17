@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import { Container, Header } from "semantic-ui-react";
 
 const blogpost = ({ data }) => {
   const site = data.site.siteMetadata;
@@ -25,18 +26,16 @@ const blogpost = ({ data }) => {
           content={post.frontmatter.date}
         />
       </Helmet>
-      <div className="blog-post">
-        <h1 className="blog-post-title">{post.frontmatter.title}</h1>
-        <div className="blog-post-date">
-          <i>
-            Posted on <b>{post.frontmatter.date}</b>
-          </i>
-        </div>
+      <Container text>
+        <Header as="h1">{post.frontmatter.title}</Header>
+        <p>
+          Posted on <b>{post.frontmatter.date}</b>
+        </p>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
-      </div>
+      </Container>
     </div>
   );
 };

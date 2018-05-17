@@ -4,11 +4,14 @@ import Helmet from "react-helmet";
 
 import Header from "../components/header";
 
-import "./css/custom.css";
+import "./component/custom.css";
+import "semantic-ui-css/semantic.min.css";
 
 const Layout = ({ children, data }) => (
   <div>
-    <Helmet title={data.site.siteMetadata.title} />
+    <Helmet title={data.site.siteMetadata.title}>
+      <meta name="viewport" content="initial-scale=1" />
+    </Helmet>
 
     <div
       style={{
